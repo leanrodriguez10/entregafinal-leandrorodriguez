@@ -1,14 +1,22 @@
 import React from 'react'
-import { AiOutlineShoppingCart } from "react-icons/ai"
+import UserContext from '../../context/UserContext/UserContext'
+
+const CartWidget = () => {
 
 
 
-const CartWidget = () =>  {
-  AiOutlineShoppingCart
+  const style ={
+    color: "white",
+    marginRight:  "10px"
+  }
   return (
-    <div>
-        <AiOutlineShoppingCart />
-         <span>0</span>
+    <div style={style}>
+      <UserContext.Consumer>
+      {
+        ({user}) => <p>Bienvenido { user.name }</p>
+      }
+      </UserContext.Consumer>
+      
     </div>
   )
 }

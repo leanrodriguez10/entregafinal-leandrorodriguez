@@ -7,7 +7,7 @@ import ItemListContainer from '../components/Items/ItemListContainer';
 
 
 const Mujer = () => {
- //const [items] = useFetch(`https://fakestoreapi.com/products/category/women's clothing`)
+  //const [items] = useFetch(`https://fakestoreapi.com/products/category/women's clothing`)
 
    console.log(items)
     
